@@ -1,0 +1,46 @@
+.profile {
+  padding: 40px;
+  text-align: center;
+  &.profile-header {
+    img {
+      border-radius: 200px;
+      margin: 0 auto 55px auto;
+    }
+    p {
+      &.name {
+        font-size: 34px;
+        font-weight: 700;
+      }
+    }
+  }
+  &.profile-content {
+    padding-top: 0;
+    .tabs {
+      border: none;
+      border-bottom: solid 1px #ccc;
+    }
+    .tabs-title {
+      display: inline-block;
+      float: none;
+      a {
+        color: $light-gray;
+        font-size: 16px;
+      }
+      a[aria-selected='true'] {
+        background: none;
+        color: black;
+        font-weight: 600;
+        border-bottom: solid 2px $primary-color;
+      }
+    }
+    .tabs-panel {
+      padding: 40px;
+    }
+    .tabs-content {
+      border: none;
+    }
+  }
+  .light {
+    color: $light-gray;
+  }
+}

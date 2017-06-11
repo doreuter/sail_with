@@ -1,0 +1,22 @@
+.input-form {
+    margin: 15px 0;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: $form-border-radius;
+    box-shadow: $form-box-shadow;
+    label {
+        font-weight: bold;
+        color: gray;
+    }
+    input {
+        font-weight: normal;
+        border-radius: $form-border-radius;
+    }
+    .button {
+        margin: 15px auto;
+        display: block;
+        width: 100%;
+        font-weight: bold;
+        border-radius: $form-border-radius;
+    }
+}

@@ -1,0 +1,108 @@
+<link rel="stylesheet" type="text/css" href="templates/includes/header.css">
+<header style="background-image: radial-gradient(ellipse at center, #3864B3 0%, #263861 100%);" class="page-top map">
+  <!-- .container-->
+  <div class="container">
+    <div class="row">
+      <!-- main navbar-->
+      <nav class="navbar white">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><img src="images/sail_white.png"  alt="logo" class="white-logo"></a>
+          <button type="button" data-toggle="offcanvas" data-target="#nav_offcanvas" class="navbar-toggle offcanvas-toggle"><span class="sr-only">Toggle navigation</span><span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></span></button>
+        </div>
+        <form class="navbar-form navbar-left">
+          <div class="input-group input-group-white input-group-sm col-lg-5 ">
+            <span class="input-group-addon glyphicon glyphicon-map-marker"></span>
+            <input id="startLocation" type="text" class="form-control " name="startLocation" placeholder= " location">
+          </div>
+          <div class="input-group input-group-white input-group-sm col-lg-5">
+            <span class="input-group-addon glyphicon glyphicon-calendar" ></i></span>
+            <input id="startDate"  type="text" class="form-control" name="startDate" ng-model="vm.trip.startDate" placeholder=" start date">
+          </div>
+        </form>
+        <div id="nav_offcanvas" class="navbar-offcanvas navbar-offcanvas-touch">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="visible-xs">
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+            <li ><a ui-sref="account"><span class="glyphicon glyphicon-user"></span> Account</a></li>
+            <li><a href="/login" target="_self"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            <li><a href="#modal_signup" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+            <div class="flash-message" ng-if="flash">
+              <div class="{{'alert alert-' + flash.type}}" ng-bind="flash.message"></div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  </div>
+</header>
+
+<!-- Sign in modal-->
+<div id="modal_signin" tabindex="-1" role="dialog" class="modal fade">
+  <div role="document" class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header"><a href="#" class="btn btn-facebook btn-indent text-center text-uppercase btn-block fa fa-facebook-f">Connect with Facebook</a><a href="#" class="btn btn-twitter btn-indent text-center text-uppercase btn-block fa fa-twitter">Connect with twitter</a></div>
+      <span
+              class="form-break small"></span>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="signin_name">Name <span class="text-danger">*</span></label>
+            <input id="signin_name" type="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="signin_email">Email</label>
+            <input id="signin_email" type="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-6 col-xs-8"><span class="custom-checkbox">
+                      <input type="checkbox" name="signin_remember" id="signin_remember" class="custom-checkbox-input">
+                      <label for="signin_remember" class="custom-checkbox-label">Remember me</label></span></div>
+              <div class="col-sm-6 col-xs-12 text-xs-left text-right"><a href="#" class="small">Lost a password?</a></div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-indent text-uppercase">Sign up</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center small">Don"t have an account? <a href="#modal_signup" data-dismiss="modal" data-toggle="modal">Sign up</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sign in modal end-->
+<!-- Sign up modal-->
+<div id="modal_signup" tabindex="-1" role="dialog" class="modal fade">
+  <div role="document" class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header"><a href="#" class="btn btn-facebook btn-indent text-center text-uppercase btn-block fa fa-facebook-f">Connect with Facebook</a><a href="#" class="btn btn-twitter btn-indent text-center text-uppercase btn-block fa fa-twitter">Connect with twitter</a></div>
+      <div class="form-break small"></div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="signup_email">Username or Email Address <span class="text-danger">*</span></label>
+            <input id="signup_email" type="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="signup_password">Password</label>
+            <input id="signup_password" type="password" class="form-control">
+          </div>
+          <div class="form-group">
+            <p class="form-control-static">A password will be e-mailed to you.</p>
+          </div>
+          <button class="btn btn-primary btn-indent text-uppercase">Sign Up</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center small">Already have an account? <a href="#modal_signin" data-dismiss="modal" data-toggle="modal">Log in</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="partials/header.js"></script>
+

@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="small-12 medium-12 large-12 columns">
+    <div class="input-form">
+      <div class="row">
+        <div class="small-12 medium-12 large-12 columns end">
+          <div class="profile profile-header">
+            <img src="http://fillmurray.com/200/200" alt="Profile Picture">
+            <p class="name">Hey, {{ user.name }}!</p>
+            <p class="light">You can manage your account here.</p>
+            <!--<p>Joined on <span>{{ user.createdAt | date: format: timezone }}</span></p>-->
+          </div>
+          <div class="profile profile-content">
+            <tabset type="navType">
+              <tab heading="Personal">
+                <p class="light">Your currently stored information.</p>
+                {{ user.name }}
+                {{ user.email }}
+
+              </tab>
+              <tab heading="Password">
+                <form>
+                  <div class="row">
+                    <div class="small-12 large-8 large-offset-2 columns">
+                      <p class="light">To change your password, simply provide your old password...</p>
+                    </div>
+                    <div class="small-12 large-4 large-offset-4 columns">
+                      <input type="password" placeholder="Old Password" ng-model="changePasswordModel.oldPassword">
+                    </div>
+                    <div class="small-12 large-8 large-offset-2 columns">
+                      <p class="light">...and your new password</p>
+                    </div>
+                    <div class="small-12 large-4 large-offset-4 columns">
+                      <input type="password" placeholder="New Password" ng-model="changePasswordModel.newPassword">
+                    </div>
+                    <div class="small-12 large-4 large-offset-4 columns">
+                      <input type="password" placeholder="Confirm Password" ng-model="changePasswordModel.newPasswordConfirm">
+                    </div>
+                    <div class="small-12 large-4 large-offset-4 columns end">
+                      <button class="button button-outlined" ng-click="changePassword(changePasswordModel)">Change Password</button>
+                    </div>
+                  </div>
+                </form>
+              </tab>
+              <tab heading="Delete Account">
+                <div class="row">
+                  <div class="small-12 large-8 large-offset-2 columns">
+                    <p class="light">To delete your account, simply provide your password...</p>
+                  </div>
+                  <div class="small-12 large-4 large-offset-4 columns">
+                    <input type="password" placeholder="Password" ng-model="delAccount.password">
+                  </div>
+                  <div class="small-12 large-8 large-offset-2 columns">
+                    <p class="light">...and delete your account.</p>
+                  </div>
+                  <div class="small-12 large-4 large-offset-4 columns end">
+                    <button class="button button-outlined button-danger" ng-click="deleteAccount(delAccount)">Delete Account</button>
+                  </div>
+                </div>
+              </tab>
+            </tabset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

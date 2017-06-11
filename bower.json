@@ -1,0 +1,38 @@
+{
+  "name": "sailwith",
+  "description": "sailwith",
+  "main": "server.js",
+  "authors": [ "NR", "TL", "DR", "RF"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nreiter/projectXFinal",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-bootstrap": "^2.2.0",
+    "bootstrap-sass": "^3.3.7",
+    "angular-sanitize": "^1.6.4",
+    "angular-ui-router": "^0.3.1",
+    "angular-loading-bar": "^0.9.0",
+    "angular-notify": "^2.5.0",
+    "angular-cookies": "^1.6.4",
+    "angular-local-storage": "^0.5.2",
+    "angular-jwt": "^0.1.8",
+    "foundation-sites": "^6.2.4",
+    "angular-foundation-6": "^0.10.14",
+    "font-awesome": "^4.7.0"
+
+  },
+  "resolutions": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^0.3.1"
+  }
+}

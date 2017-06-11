@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns">
+
+    <form ng-if="!registerSuccessful">
+      <div class="row input-form">
+        <div class="small-12 large-8 large-offset-2 columns">
+          <label>Name
+            <input type="text" placeholder="John Doe" ng-model="registerUser.name">
+          </label>
+        </div>
+        <div class="small-12 large-8 large-offset-2 columns">
+          <label>E-Mail
+            <input type="email" placeholder="john@doe.com" ng-model="registerUser.email">
+          </label>
+        </div>
+        <div class="small-12 large-8 large-offset-2 columns">
+          <label>Password
+            <input type="password" placeholder="******" ng-model="registerUser.password">
+          </label>
+        </div>
+        <div class="small-12 large-8 large-offset-2 columns">
+          <label>Confirm password
+            <input type="password" placeholder="******" ng-model="validateData.confirmPassword">
+          </label>
+        </div>
+        <div class="small-12 large-8 large-offset-2 columns">
+          <input id="form-terms" type="checkbox" ng-model="validateData.terms">
+          <label for="form-terms">Agree terms and conditions</label>
+        </div>
+        <div class="small-12 large-8 large-offset-2 columns end">
+          <button class="button" ng-click="register(registerUser)">Register</button>
+        </div>
+      </div>
+    </form>
+
+    <div ng-if="registerSuccessful">
+      Registration successful!
+    </div>
+
+    <pre>{{ registerUser | json }}</pre>
+    <pre>{{ validateData | json }}</pre>
+  </div>
+</div>

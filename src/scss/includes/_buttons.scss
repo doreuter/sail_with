@@ -1,0 +1,34 @@
+a, button {
+  &.button {
+    margin: 10px 0 10px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    &.button-outlined {
+      color: $primary-color;
+      background-color: white;
+      border: solid 1px $primary-color;
+      &:hover {
+        background-color: $primary-color;
+        color: white;
+      }
+      &.button-danger {
+        color: $danger-color;
+        border: solid 1px $danger-color;
+        &:hover {
+          background-color: $danger-color;
+          color: white;
+        }
+      }
+      &.button-success {
+        color: $success-color;
+        border: solid 1px $success-color;
+        &:hover {
+          background-color: $success-color;
+          color: white;
+        }
+      }
+    }
+  }
+}

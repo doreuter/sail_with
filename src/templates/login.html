@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns">
+
+    <form>
+      <div class="row input-form">
+        <div class="small-12 large-8 large-offset-2 columns">
+          <label>E-Mail
+            <input type="email" placeholder="john@doe.com" ng-model="loginUser.email">
+          </label>
+        </div>
+        <div class="small-12 large-8 large-offset-2 columns">
+          <label>Password
+            <input type="password" placeholder="******" ng-model="loginUser.password">
+          </label>
+        </div>
+        <div class="small-12 large-8 large-offset-2 columns end">
+          <button class="button" ng-click="login(loginUser)">Login</button>
+        </div>
+      </div>
+    </form>
+
+    <pre>{{ loginUser | json }}</pre>
+  </div>
+</div>

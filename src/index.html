@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="projectXApp">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project X</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link href="/favicon.ico" type="image/x-icon" rel="icon">
+  <link rel="stylesheet" href="/css/bundle.bower_components.css" type="text/css">
+  <link rel="stylesheet" href="/css/bundle.min.css" type="text/css">
+    <script type="text/javascript" src="js/core/jquery-1.12.4.min.js"></script>
+
+    <!-- Bootstrap 3 .css-->
+    <link type="text/css" href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome .css-->
+    <link type="text/css" href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
+    <!-- Fotorama .css-->
+    <link type="text/css" href="css/fotorama/fotorama.css" rel="stylesheet">
+    <!-- Bootstrap rating .css-->
+    <link type="text/css" href="css/bootstrap/bootstrap-rating.css" rel="stylesheet">
+    <!-- Bootstrap select .css-->
+    <link type="text/css" href="css/bootstrap/bootstrap-select.min.css" rel="stylesheet">
+    <!-- Datarangepicker-->
+    <link type="text/css" href="js/plugins/datarangepicker/datarangepicker.css" rel="stylesheet">
+    <!-- Animate .css-->
+    <link type="text/css" href="css/animate/animate.min.css" rel="stylesheet">
+    <!-- Bootstrap Offcanvas nav .css-->
+    <link type="text/css" href="css/bootstrap/bootstrap.offcanvas.min.css" rel="stylesheet">
+    <!-- Owl carousel .css-->
+    <link type="text/css" href="css/owl.carousel/owl.carousel.min.css" rel="stylesheet">
+    <!-- Perfet scrollbar .css-->
+    <link type="text/css" href="css/other/perfect-scrollbar.css" rel="stylesheet">
+    <!-- Uplist theme .css-->
+    <link type="text/css" id="theme_link" href="css/theme.blue.css" rel="stylesheet">
+
+
+
+    <script src="js/bundle.bower_components.js" type="text/javascript"></script>
+  <script src="js/bundle.js" type="text/javascript"></script>
+    <!-- scripts-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/core/html5shiv.min.js"></script>
+    <script type="text/javascript" src="js/core/respond.min.js"></script>
+    <![endif]-->
+    <!-- Jquery 1.12.4-->
+
+    <!-- Datarangepicker-->
+    <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+    <script type="text/javascript" src="js/plugins/datarangepicker/jquery.datarangepicker.js"></script>
+    <!-- Bootstrap 3-->
+    <script type="text/javascript" src="js/core/bootstrap.min.js"></script>
+    <!-- Bootstrap select-->
+    <script type="text/javascript" src="js/plugins/bootstrap-select.min.js"></script>
+    <!-- Bootstrap rating-->
+    <script type="text/javascript" src="js/plugins/bootstrap-rating.min.js"></script>
+    <!-- Bootstrap offcanvas-->
+    <script type="text/javascript" src="js/plugins/bootstrap.offcanvas.js"></script>
+    <!-- Jquery Vide-->
+    <script type="text/javascript" src="js/plugins/jquery.vide.min.js"></script>
+    <!-- Fotorama-->
+    <script type="text/javascript" src="js/plugins/fotorama.js"></script>
+    <!-- Jquery matchHeight-->
+    <script type="text/javascript" src="js/plugins/jquery.matchHeight-min.js"></script>
+    <!-- Owl Carousel-->
+    <script type="text/javascript" src="js/plugins/owl.carousel.min.js"></script>
+    <!-- Perfect scroll-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar.jquery.js"></script>
+    <!-- Animate-->
+    <script type="text/javascript" src="js/theme/animate.js"></script>
+    <!-- DS Plugins-->
+    <script type="text/javascript" src="js/theme/ds-plugins.js"></script>
+    <!-- DS Scripts-->
+    <script type="text/javascript" src="js/theme/ds-scripts.js"></script>
+    <!-- DS Custom-->
+    <script type="text/javascript" src="js/ds-custom.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvpH7_ggEW5MYLRO8EN1BbJak4u2uIvaA"></script>
+    <script defer src="js/theme/google-map.js"></script>
+    <!-- scripts end-->
+
+
+  <link rel="stylesheet" href="css/test.css" type="text/css">
+
+
+</head>
+<body ng-controller="mainController">
+  <div ng-include="'templates/includes/navigation.html'"></div>
+
+
+
+  <div ui-view class="content"></div>
+  <div ng-include="'templates/includes/footer.html'"></div>
+</body>
+</html>
